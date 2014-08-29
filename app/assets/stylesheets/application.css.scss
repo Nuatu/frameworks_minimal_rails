@@ -1,0 +1,41 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  text-align: center
+}
+
+.jumbotron {
+   margin-top: 15em;
+}
+
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('languages.png');
+  width: 1200px;
+  height: 800px;
+
+  -webkit-filter: blur(1.5px);
+  -moz-filter: blur(1.5px);
+  -o-filter: blur(1.5px);
+  -ms-filter: blur(1.5px);
+  filter: blur(1.5px);
+}
+
+.content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  h3 {
+  color: #404040;
+  font-size:30px;
+  padding-bottom: 20px ;
+  }
+}
