@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
-  database: wikipages_development
+  database: frameworks_development
 
 test:
   adapter: postgresql
-  database: wikipages_test
+  database: frameworks_test
