@@ -1,4 +1,4 @@
-class Framework < ActiveRecord::Base
+class Language < ActiveRecord::Base
 
   validates :name, presence: true
   has_many :tags, as => :taggable
