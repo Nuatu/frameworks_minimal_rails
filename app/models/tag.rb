@@ -1,6 +1,6 @@
 class Tag < ActiveRecord::Base
 
   validates :name, presence: true
-  belongs_to :taggable, :polymorphic => true
+  has_many :taggings
 
 end
