@@ -1,4 +1,25 @@
 <% content_for(:title, "Languages") %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-3">
+      <%= render('layouts/errors', object: @language) %>
+
+      <h3>Add a Language</h3>
+
+      <form id="language" action="/languages" method="post">
+        <%= render('form') %>
+        <button>Submit</button>
+      </form>
+    </div>
 
 
-<h1>Languages</h1>
+    <div class="col-sm-3">
+      <h1>Languages</h1>
+      <ul>
+        <% @languages.each do |language| %>
+          <li><a href="/languages/<%= language.id %>"><%= language.name %></a></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
