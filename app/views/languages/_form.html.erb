@@ -1,10 +1,3 @@
-<label for="language_name">Language Name</label>
-  <input id="language" name="languages[name]" type="text"><br />
+<label for='language_name'>Name</label>
+<input id='language_name' name='language[name]' type='text' value = "<%= @language.name %>">
 
-  <select form="language" name="taggings[tag_id]">
-
-    <option value="">Choose a tag</option>
-    <% @tags.each do |tag| %>
-      <option value="<%= tag.id %>"><%= tag.name %></option>
-    <% end %>
-  </select><br />

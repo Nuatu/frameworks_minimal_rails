@@ -1,0 +1,14 @@
+<div class="col-sm-3">
+  <%= render('nav') %>
+</div>
+
+<div class="col-sm-3">
+  <h2><%= @tag.name %></h2>
+  <p><a href='/tags/<%= @tag.id %>/edit'>Edit</a></p>
+  <p><a href='/tags/<%= @tag.id %>'
+    data-confirm="Are you sure?"
+    data-method="delete"
+    rel='nofollow'>Delete</a></p>
+</div>
+
+

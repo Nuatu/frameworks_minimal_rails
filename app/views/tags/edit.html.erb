@@ -1,0 +1,20 @@
+<% content_for(:title, "Edit") %>
+<div class="col-sm-3">
+  <%= render('nav') %>
+</div>
+
+<div class="col-sm-3">
+  <h2>Edit Tag</h2>
+  <%= flash[:notice] %>
+
+  <form action='/tags/<%= @tag.id %>' method='post'>
+  <input name='_method' type='hidden' value='patch'>
+
+  <%= render('form') %>
+
+  <button>Update Now</button>
+  </form>
+</div>
+
+
+

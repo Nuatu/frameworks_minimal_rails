@@ -1,4 +1,4 @@
-<% content_for(:title, "Languages") %>
+<% content_for(:title, "Taggings") %>
 <div class="container">
   <div class="row">
 
@@ -10,18 +10,18 @@
       <h1>New</h1>
       <%= flash[:notice] %>
 
-      <form action='/languages/<%= @language.id %>' method='post'>
+      <form action='/taggings/<%= @tagging.id %>' method='post'>
       <%= render('form') %>
-      <button>Update Now</button>
+      <button>Create</button>
       </form>
     </div>
 
 
     <div class="col-sm-3">
-      <h1>Languages</h1>
+      <h1>Tags</h1>
       <ul>
-        <%=@languages.each do |language| %>
-          <li><a href="/languages/<%= language.id %>"><%= language.name %></a></li>
+        <%=@taggings.each do |tagging| %>
+          <li><a href="/taggings/<%= tagging.id %>"><%= tagging.name %></a></li>
         <% end %>
       </ul>
     </div>

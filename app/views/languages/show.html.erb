@@ -1,0 +1,14 @@
+<div class="col-sm-3">
+  <%= render('nav') %>
+</div>
+
+<div class="col-sm-3">
+  <h2><%= @language.name %></h2>
+  <p><a href='/languages/<%= @language.id %>/edit'>Edit</a></p>
+  <p><a href='/languages/<%= @language.id %>'
+    data-confirm="Are you sure?"
+    data-method="delete"
+    rel='nofollow'>Delete</a></p>
+</div>
+
+
