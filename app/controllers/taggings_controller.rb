@@ -3,7 +3,9 @@ class TaggingsController < ApplicationController
   def index
     @tagging = Tagging.new
     @taggings = Tagging.all
-    @taggings = Tagging.all
+    @languages = Language.all
+    @frameworks = Framework.all
+    @tags = Tag.all
     render('/taggings/index.html.erb')
   end
 
