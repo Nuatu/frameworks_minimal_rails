@@ -2,38 +2,40 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-sm-3">
-      <%= render('nav') %>
-    </div>
-
     <div class="col-sm-2">
       <h1>New</h1>
       <%= flash[:notice] %>
 
+
       <form action='/taggings/<%= @tagging.id %>' method='post'>
-      <%= render('form') %>
-      <button>Create</button>
+        <button>Create</button>
+      </div>
+
+
+        <div class="col-sm-2">
+          <h3>Tags</h3>
+          <% @tags.each do |i| %>
+          <%= radio_button_tag "tag_id[]", i.id, i.taggings.include?(i.id), id: dom_id(i) %>
+          <%= label_tag dom_id(i), i.name %><br>
+          <% end %>
+        </div>
+
+        <div class="col-sm-3">
+          <h3>Languages</h3>
+          <% @languages.each do |i| %>
+          <%= check_box_tag "language_ids[]", i.id, i.taggings.include?(i.id), id: dom_id(i) %>
+          <%= label_tag dom_id(i), i.name %><br>
+          <% end %>
+        </div>
+
+        <div class="col-sm-2">
+          <h3>Frameworks</h3>
+          <% @frameworks.each do |i| %>
+          <%= check_box_tag "framework_ids[]", i.id, i.taggings.include?(i.id), id: dom_id(i) %>
+          <%= label_tag dom_id(i), i.name %><br>
+          <% end %>
+        </div>
       </form>
-    </div>
 
-
-
-    <div class="field">
-      <h3>Tags</h3>
-      <% @tags.each do |i| %>
-      <%= check_box_tag "tag[tagging_id][]", i.id, i.taggings.include?(i.id), id: dom_id(i) %>
-      <%= label_tag dom_id(i), i.name %><br>
-      <% end %>
-    </div>
-
-
-    <div class="col-sm-2">
-      <h1>Tags</h1>
-      <ul>
-        <%=@tags.each do |tag| %>
-          <li><a href="/tags/<%= tag.id %>"><%= tag.name %></a></li>
-        <% end %>
-      </ul>
-    </div>
   </div>
 </div>

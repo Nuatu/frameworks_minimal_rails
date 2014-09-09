@@ -10,15 +10,29 @@ class TaggingsController < ApplicationController
   end
 
   def create
-    @tagging = Tagging.new(tagging_params)
-    if @tagging.save
-      flash[:notice] = "Sweet - it's been added"
-      index
-    else
-      flash[:notice] = "Please enter a name"
-      index
+    tag = params[:tag_id].first.to_i
+    languages = params[:language_ids]
+    frameworks = params[:framework_ids]
+    counter = 0
+
+    languages.each_with_index do |language|
+      Tagging.new(:tag_id => tag,
+                  :taggable_id => languages[counter].to_i,
+                  :taggable_type => "language")
+      counter +=1
     end
   end
+
+
+  #   @tagging = Tagging.new(tagging_params)
+  #   if @tagging.save
+  #     flash[:notice] = "Sweet - it's been added"
+  #     index
+  #   else
+  #     flash[:notice] = "Please enter a name"
+  #     index
+  #   end
+  # end
 
   def show
     @taggings = Tagging.all
@@ -50,7 +64,7 @@ class TaggingsController < ApplicationController
 
   private
     def tagging_params
-      params.require(:tagging).permit(:name)
+      params.require(:tagging).permit(:tag_id, :language_id, :framework_id)
     end
 
 end

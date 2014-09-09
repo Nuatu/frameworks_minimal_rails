@@ -3,10 +3,6 @@
   <div class="row">
 
     <div class="col-sm-3">
-      <%= render('nav') %>
-    </div>
-
-    <div class="col-sm-3">
       <h1>New</h1>
       <%= flash[:notice] %>
 
@@ -20,7 +16,7 @@
     <div class="col-sm-3">
       <h1>Tags</h1>
       <ul>
-        <%=@tags.each do |tag| %>
+        <% @tags.each do |tag| %>
           <li><a href="/tags/<%= tag.id %>"><%= tag.name %></a></li>
         <% end %>
       </ul>
