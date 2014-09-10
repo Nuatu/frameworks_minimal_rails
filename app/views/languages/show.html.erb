@@ -1,11 +1,44 @@
 
-<div class="col-sm-3">
+<div class="col-sm-2">
   <h2><%= @language.name %></h2>
   <p><a href='/languages/<%= @language.id %>/edit'>Edit</a></p>
   <p><a href='/languages/<%= @language.id %>'
     data-confirm="Are you sure?"
     data-method="delete"
     rel='nofollow'>Delete</a></p>
+</div>
+
+
+
+<div class="col-sm-3">
+  <h3>Add Tag</h3>
+  <form role="form" action="/taggings" method="post">
+      <input type='hidden' name='taggable_type' value="Language">
+      <input type='hidden' name='taggable_id' value="<%=@language.id %>">
+    <div class="checkbox">
+      <% Tag.all.each do |tag|%>
+        <label>
+          <% if @language.tags.include? tag %>
+            <input type="radio" name='tag_id' value="<%= tag.id %>" checked>
+          <% else %>
+            <input type="radio" name='tag_id' value="<%= tag.id %>">
+          <% end %>
+          <%= tag.name %>
+        </label>
+        </br>
+      <% end %>
+    </div>
+    <button type="submit" class="btn btn-primary">Make it!</button>
+  </form>
+</div>
+
+<div class="col-m-3">
+  <h3>Current Taggings</h3>
+  <ul>
+    <% @taggings.each do |tag| %>
+      <li><%= Tag.find(tag.id).name %></li>
+    <% end %>
+  </ul>
 </div>
 
 

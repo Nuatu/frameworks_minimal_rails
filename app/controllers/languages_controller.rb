@@ -19,8 +19,10 @@ class LanguagesController < ApplicationController
   end
 
   def show
+    @tags = Tag.all
     @languages = Language.all
     @language = Language.find(params[:id])
+    @taggings = @language.tags
     render '/languages/show.html.erb'
   end
 
