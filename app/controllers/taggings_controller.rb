@@ -21,7 +21,7 @@ class TaggingsController < ApplicationController
         redirect_to '/frameworks/'
       end
     else
-      flash[:notice] = "Please enter a"
+      flash[:notice] = "Please enter a name"
       if @tagging.taggable_type == "Language"
         redirect_to '/languages/'
       elsif @tagging.taggable_type == "Framework"

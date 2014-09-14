@@ -8,13 +8,15 @@ class LanguagesController < ApplicationController
   end
 
   def create
+    @languages = Language.all
     @language = Language.new(language_params)
+    @taggings = @language.tags
     if @language.save
       flash[:notice] = "Sweet - it's been added"
-      index
+      render '/languages/show.html.erb'
     else
       flash[:notice] = "Please enter a name"
-      index
+      render('/languages/index.html.erb')
     end
   end
 
@@ -36,10 +38,10 @@ class LanguagesController < ApplicationController
     @language = Language.find(params[:id])
     if @language.update(language_params)
       flash[:notice] = "Sweet - it's been updated"
-      edit
+      render('/languages/edit.html.erb')
     else
       flash[:notice] = "Please enter a name"
-      edit
+      render('/languages/edit.html.erb')
     end
   end
 

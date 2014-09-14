@@ -1,11 +1,45 @@
+<div class="row">
 
-<div class="col-sm-3">
-  <h2><%= @framework.name %></h2>
-  <p><a href='/frameworks/<%= @framework.id %>/edit'>Edit</a></p>
-  <p><a href='/frameworks/<%= @framework.id %>'
-    data-confirm="Are you sure?"
-    data-method="delete"
-    rel='nofollow'>Delete</a></p>
+  <div class="col-sm-2">
+    <h2><%= @framework.name %></h2>
+    <p><a href='/frameworks/<%= @framework.id %>/edit'>Edit</a></p>
+    <p><a href='/frameworks/<%= @framework.id %>'
+      data-confirm="Are you sure?"
+      data-method="delete"
+      rel='nofollow'>Delete</a></p>
+  </div>
+
+
+
+  <div class="col-sm-3">
+    <h3>Add Tag</h3>
+    <form role="form" action="/taggings" method="post">
+        <input type='hidden' name='taggable_type' value="Framework">
+        <input type='hidden' name='taggable_id' value="<%=@framework.id %>">
+      <div class="checkbox">
+        <% Tag.all.each do |tag|%>
+          <label>
+            <% if @framework.tags.include? tag %>
+              <input type="radio" name='tag_id' value="<%= tag.id %>" checked>
+            <% else %>
+              <input type="radio" name='tag_id' value="<%= tag.id %>">
+            <% end %>
+            <%= tag.name %>
+          </label>
+          </br>
+        <% end %>
+      </div>
+      <button type="submit" class="btn btn-primary">Make it!</button>
+    </form>
+  </div>
+
+  <div class="col-m-3">
+    <h3>Current Taggings</h3>
+    <ul>
+      <% @taggings.each do |tag| %>
+        <li><%= Tag.find(tag.id).name %></li>
+      <% end %>
+    </ul>
+  </div>
 </div>
-
 
