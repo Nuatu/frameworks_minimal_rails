@@ -7,7 +7,12 @@ IN [Epicodus](http://www.epicodus.com/) speak, this app serves as [Nuatu's] (htt
 <ul>
 <li>Charlie:
 <ul>
-<li>"Hey Frankie, what good is an app that can't be accessed from thin air? I dunno Charlie, let's ask Heroku."
+<li>"Hey Frankie, what good is an web app that I can't put online? "
+</ul>
+
+<li>Frankie:
+<ul>
+<li>"I dunno Charlie, let's ask Heroku."
 </ul>
 
 <li>Heroku:
@@ -15,10 +20,6 @@ IN [Epicodus](http://www.epicodus.com/) speak, this app serves as [Nuatu's] (htt
 <li>"Every amateur or professional app that someone took time to code deserves an address on th Interwebs.
 </ul>
 
-<li>Frankie:
-<ul>
-<li>"But, but, but, does Heroku put their money where their mouth is?"
-</ul>
 </ul>
 You Be The Judge!
 
