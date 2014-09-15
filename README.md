@@ -1,22 +1,28 @@
-#Programming Languages | Frameworks | Tags
+##Programming Languages | Frameworks | Tags
 This web app is built with Rails, Postgres, and Bootstrap. It features handwritten RESTful routes, a polymorphic join table, and explicit renders & redirects.
 
-At [Epicodus](http://www.epicodus.com/) land <+> this app serves as [Nuatu Tseggai's](https://github.com/Nuatu) ["Rails basics assessment"](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment) a.k.a Minimal Magic.
+IN [Epicodus](http://www.epicodus.com/) speak, this app serves as [Nuatu's] (https://github.com/Nuatu) Minimal Magic a.k.a ["Rails basics assessment"](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment).
 <ul>
 <li>Charlie:
-"Hey Frankie, what good is an app that can't be accessed from thin air? I dunno Charlie, let's ask Heroku."
+<ul>
+<li>"Hey Frankie, what good is an app that can't be accessed from thin air? I dunno Charlie, let's ask Heroku."
+</ul>
 
 <li>Heroku:
-"Every amateur or professional app that someone took time to code deserves an address on th Interwebs.
+<ul>
+<li>"Every amateur or professional app that someone took time to code deserves an address on th Interwebs.
+</ul>
 
 <li>Frankie:
-"But, but, but, does Heroku put their money where their mouth is?"
+<ul>
+<li>"But, but, but, does Heroku put their money where their mouth is?"
+</ul>
 </ul>
 You Be The Judge!
 
-Livest app on the Interwebs: Now Serving ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
+GO LIVE: Now Serving ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
 
-It's like Butter Baby -- go ahead, add some tags, or some languages or some frameworks. Then click on one of the objects to associate tags with languages or frameworks.
+It's like Butter Rican Pecans -- go ahead, add some tags, or some languages or some frameworks. Then click on one of the objects to associate tags with languages or frameworks.
 
 [Heroku](https://www.heroku.com) for Super Strong Win
 
