@@ -26,7 +26,7 @@ LIVE WEB APP: ["Programming Languages + Frameworks"](http://languages-tags-frame
 
 It's like Butter Rican Pecans -- go ahead, add some tags, or some languages or some frameworks. Then click on one of the objects to associate tags with languages or frameworks.
 
-[Heroku](https://www.heroku.com) for Super Strong Win
+[Heroku](https://www.heroku.com) for the Win!
 
 
 ##Setup
