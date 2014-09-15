@@ -1,5 +1,7 @@
 ##Programming Languages | Frameworks | Tags
-This web app is built with Rails, Postgres, and Bootstrap. It features handwritten RESTful routes, a polymorphic join table, and explicit renders & redirects.
+This web app is built with Rails, Postgres, and Bootstrap.
+
+FeaturING handwritten RESTful routes, a polymorphic join table, and explicit renders & redirects.
 
 IN [Epicodus](http://www.epicodus.com/) speak, this app serves as [Nuatu's] (https://github.com/Nuatu) Minimal Magic a.k.a ["Rails basics assessment"](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment).
 <ul>
