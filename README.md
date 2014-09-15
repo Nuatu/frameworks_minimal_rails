@@ -62,7 +62,8 @@ $ rails s
 ```
 It should now be available at `localhost:3000`
 
-OR Live app on the Interwebs: Heroku Serving << ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
+OR ONLINE @: ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
+
 
 ##Author
 [Nuatu Tseggai](http://www.linkedin.com/in/nuatu)
