@@ -17,13 +17,13 @@ IN [Epicodus](http://www.epicodus.com/) speak, this app serves as [Nuatu's] (htt
 
 <li>Heroku:
 <ul>
-<li>"Every amateur or professional app that someone took time to code deserves an address on th Interwebs.
+<li>"Every amateur or professional app that someone took time to code deserves an address on the Interweb.
 </ul>
 
 </ul>
 You Be The Judge!
 
-GO LIVE: Now Serving ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
+LIVE WEB APP: ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
 
 It's like Butter Rican Pecans -- go ahead, add some tags, or some languages or some frameworks. Then click on one of the objects to associate tags with languages or frameworks.
 
