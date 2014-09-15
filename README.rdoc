@@ -1,7 +1,7 @@
-#Programming < Languages | Frameworks | Tags > Site
+#Programming Languages | Frameworks | Tags
 This web app is built with Rails | Postgres. It features handwritten RESTful routes, a polymorphic join table, as well as explicit renders & redirects.
 
-In [Epicodus](http://www.epicodus.com/) land <> this app serves as [Nuatu Tseggai's](https://github.com/Nuatu) ["Rails basics assessment" a.k.a Rails w: Minimal Magic](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment).
+At [Epicodus](http://www.epicodus.com/) land <+> this app serves as [Nuatu Tseggai's](https://github.com/Nuatu) ["Rails basics assessment" a.k.a Rails w: Minimal Magic](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment).
 
 Charlie:
 "Hey Frankie, what good is an app that can't be accessed from thin air? I dunno Charlie, let's ask Heroku."
@@ -12,13 +12,13 @@ Heroku:
 Frankie:
 "But, but, but, does Heroku put their money where their mouth is?"
 
-<>You tell me!<>
+You tell me!
 
-Live app on the Interwebs: Heroku Serving <<>> ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
+Live app on the Interwebs: Heroku Serving ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
 
 Go ahead, add some tags, or some languages or frameworks. Then click on one of the objects to associate tags with languages or frameworks.
 
-<> [Heroku](https://www.heroku.com) for the Win <>
+[Heroku](https://www.heroku.com) for the Win
 
 
 ##Setup
