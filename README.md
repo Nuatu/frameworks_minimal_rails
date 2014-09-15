@@ -21,7 +21,6 @@ IN [Epicodus](http://www.epicodus.com/) speak, this app serves as [Nuatu's] (htt
 </ul>
 
 </ul>
-You Be The Judge!
 
 LIVE WEB APP: ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
 
