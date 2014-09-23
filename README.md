@@ -4,30 +4,10 @@ This web app is built with Rails, Postgres, and Bootstrap.
 FeaturING handwritten RESTful routes, a polymorphic join table, and explicit renders & redirects.
 
 IN [Epicodus](http://www.epicodus.com/) speak, this app serves as [Nuatu's] (https://github.com/Nuatu) Minimal Magic a.k.a ["Rails basics assessment"](http://www.learnhowtoprogram.com/lessons/rails-basics-assessment).
-<ul>
-<li>Charlie:
-<ul>
-<li>"Hey Frankie, what good is an web app that I can't put online? "
-</ul>
-
-<li>Frankie:
-<ul>
-<li>"I dunno Charlie, let's ask Heroku."
-</ul>
-
-<li>Heroku:
-<ul>
-<li>"Every amateur or professional app that someone took time to code deserves an address on the Interweb.
-</ul>
-
-</ul>
 
 LIVE WEB APP: ["Programming Languages + Frameworks"](http://languages-tags-frameworks.herokuapp.com/#)
 
-It's like Butter Rican Pecans -- go ahead, add some tags, or some languages or some frameworks. Then click on one of the objects to associate tags with languages or frameworks.
-
-[Heroku](https://www.heroku.com) for the Win!
-
+-- go ahead, add some tags, or some languages or some frameworks. Then click on one of the objects to associate tags with languages or frameworks.
 
 ##Setup
 In your terminal, clone this repo:
